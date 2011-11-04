@@ -258,7 +258,8 @@
 
 - (float)tableViewHeight {
     // calculate height of table view (modify for multiple sections)
-    return self.tableView.rowHeight * [self tableView:self.tableView numberOfRowsInSection:0];
+    return [tableView contentSize].height;
+    //return self.tableView.rowHeight * [self tableView:self.tableView numberOfRowsInSection:0];
 }
 
 - (void)repositionRefreshHeaderView {
